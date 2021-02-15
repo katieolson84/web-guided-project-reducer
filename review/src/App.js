@@ -4,7 +4,8 @@ import "./styles.css";
 
 
 let currentState = {
-  currentValue: 0
+  currentValue: 0,
+  memory: 0
 };
 
 console.log(currentState);
