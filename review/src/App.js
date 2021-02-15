@@ -3,6 +3,8 @@ import reducer from './reducers/calcReducer';
 import "./styles.css";
 
 
+console.log("here here");
+
 export default function App() {
   return (
     <div className="App">
