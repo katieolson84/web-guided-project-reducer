@@ -48,7 +48,7 @@ export default function App() {
   const handleClearClick = ()=>{
     dispatch(clearAction());
   }
-  
+
   return (
     <div className="App">
       <textarea rows="1" value={state.currentValue} id="total" type="text" name="ans"></textarea>
