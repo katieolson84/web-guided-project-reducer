@@ -2,33 +2,12 @@ import React, { useReducer } from "react";
 import reducer from './reducers/calcReducer';
 import "./styles.css";
 
-
-
-//action creators
-const addAction = (input) => {
-  return({ type: "ADD", payload: input});
-}
-
-const subtractAction = (input) => {
-  return({ type: "SUBTRACT", payload: input});
-}
-
-const clearAction = () => {
-  return({ type: "CLEAR"});
-}
-
-const addToMemoryAction = ()=> {
-  return({type: "ADD_TO_MEMORY"})
-}
-
+import {addAction, subtractAction, addToMemoryAction, clearAction} from './actions/calcAction';
 //application
 let currentState = {
   currentValue: 0,
   memory: 0
 };
-
-console.log(currentState);
-
 
 
 currentState = reducer(currentState, addAction(5) );
@@ -47,6 +26,9 @@ currentState = reducer(currentState, addToMemoryAction());
 console.log(currentState);
 
 currentState = reducer(currentState, clearAction());
+console.log(currentState);
+
+currentState = reducer(currentState, addAction(5) );
 console.log(currentState);
 
 export default function App() {
