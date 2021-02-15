@@ -38,7 +38,7 @@ export default function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const handleClick = () =>{
-    dispatch(addAction(2));
+    dispatch({type:"ADD", payload:2});
   }
 
   return (
