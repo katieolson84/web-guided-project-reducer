@@ -32,8 +32,9 @@ currentState = reducer(currentState, addAction(5) );
 console.log(currentState);
 
 export default function App() {
-  const [state, setState ] = useState(initialState);
-  // const [] = useReducer();
+  // const [state, setState ] = useState(initialState);
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
     <div className="App">
       <textarea rows="1" value="0" id="total" type="text" name="ans"></textarea>
