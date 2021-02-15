@@ -8,7 +8,9 @@ let currentState = {
 };
 
 console.log(currentState);
-currentState = reducer()
+currentState = reducer(currentState, { type: "ADD", payload: 5});
+
+console.log(currentState);
 
 export default function App() {
   return (
