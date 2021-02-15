@@ -33,8 +33,8 @@ import {addAction, subtractAction, addToMemoryAction, clearAction} from './actio
 // currentState = reducer(currentState, addAction(5) );
 // console.log(currentState);
 
-export default function App() {
-  // const [state, setState ] = useState(initialState);
+
+const useAppStateStuff = (reducer, initialState) =>{
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const handleAddClick = () =>{
@@ -48,6 +48,12 @@ export default function App() {
   const handleClearClick = ()=>{
     dispatch(clearAction());
   }
+
+  return([state, addAction, subtractAction, clearAction]);
+}
+
+export default function App() {
+  // const [state, setState ] = useState(initialState);
 
   return (
     <div className="App">
