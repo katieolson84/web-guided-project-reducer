@@ -37,6 +37,9 @@ export default function App() {
   // const [state, setState ] = useState(initialState);
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  const handleClick = () =>{
+    dispatch(addAction(2));
+  }
 
   return (
     <div className="App">
