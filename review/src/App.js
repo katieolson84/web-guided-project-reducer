@@ -5,8 +5,8 @@ import "./styles.css";
 
 
 //action creators
-const addAction = () => {
-  return({ type: "ADD", payload: 5});
+const addAction = (input) => {
+  return({ type: "ADD", payload: input});
 }
 
 //application
@@ -19,7 +19,7 @@ console.log(currentState);
 
 
 
-currentState = reducer(currentState, );
+currentState = reducer(currentState, addAction(5));
 console.log(currentState);
 
 currentState = reducer(currentState, { type: "SUBTRACT", payload: 1});
@@ -28,7 +28,7 @@ console.log(currentState);
 currentState = reducer(currentState, { type: "SUBTRACT", payload: 12332});
 console.log(currentState);
 
-currentState = reducer(currentState, { type: "ADD", payload: 4352345234532});
+currentState = reducer(currentState, addAction(1312312312));
 console.log(currentState);
 
 currentState = reducer(currentState, { type: "ADD_TO_MEMORY"});
