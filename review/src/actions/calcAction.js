@@ -1,3 +1,4 @@
+export const ADD_ACTION = "ADD";
 
 //action creators
 export const addAction = (input) => {
