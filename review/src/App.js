@@ -9,7 +9,8 @@ let currentState = {
 
 console.log(currentState);
 currentState = reducer(currentState, { type: "ADD", payload: 5});
-
+console.log(currentState);
+currentState = reducer(currentState, { type: "SUBTRACT", payload: 1});
 console.log(currentState);
 
 export default function App() {
