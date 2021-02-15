@@ -45,6 +45,10 @@ export default function App() {
     dispatch(subtractAction(5));
   }
 
+  const handleClearClick = ()=>{
+    dispatch(clearAction());
+  }
+  
   return (
     <div className="App">
       <textarea rows="1" value={state.currentValue} id="total" type="text" name="ans"></textarea>
@@ -57,7 +61,7 @@ export default function App() {
         - 5
       </button>
 
-      <button type="button" className="btn">
+      <button onClick={handleClearClick} type="button" className="btn">
         Clear
       </button>
     </div>
