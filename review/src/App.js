@@ -3,7 +3,11 @@ import reducer from './reducers/calcReducer';
 import "./styles.css";
 
 
+let currentState = {
+  currentValue: 0
+};
 
+console.log(currentState);
 
 export default function App() {
   return (
