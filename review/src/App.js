@@ -17,6 +17,9 @@ const clearAction = () => {
   return({ type: "CLEAR"});
 }
 
+const addToMemoryAction = ()=> {
+  return({type: "ADD_TO_MEMORY"})
+}
 
 //application
 let currentState = {
@@ -31,10 +34,10 @@ console.log(currentState);
 currentState = reducer(currentState, addAction(5));
 console.log(currentState);
 
-currentState = reducer(currentState, { type: "SUBTRACT", payload: 1});
+currentState = reducer(currentState, subtractAction(4));
 console.log(currentState);
 
-currentState = reducer(currentState, { type: "SUBTRACT", payload: 12332});
+currentState = reducer(currentState, subtractAction(57232));
 console.log(currentState);
 
 currentState = reducer(currentState, addAction(1312312312));
