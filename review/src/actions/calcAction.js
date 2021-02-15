@@ -5,17 +5,17 @@ export const ADD_TO_MEMORY_ACTION = "ADD_TO_MEMORY";
 
 //action creators
 export const addAction = (input) => {
-    return({ type: "ADD", payload: input});
+    return({ type: ADD_ACTION, payload: input});
 }
   
 export const subtractAction = (input) => {
-    return({ type: "SUBTRACT", payload: input});
+    return({ type: SUBTRACT_ACTION, payload: input});
 }
 
 export const clearAction = () => {
-    return({ type: "CLEAR"});
+    return({ type: CLEAR_ACTION});
 }
 
 export const addToMemoryAction = ()=> {
-    return({type: "ADD_TO_MEMORY"})
+    return({type: ADD_TO_MEMORY_ACTION})
 }
