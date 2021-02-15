@@ -16,6 +16,12 @@ console.log(currentState);
 currentState = reducer(currentState, { type: "SUBTRACT", payload: 1});
 console.log(currentState);
 
+currentState = reducer(currentState, { type: "SUBTRACT", payload: 12332});
+console.log(currentState);
+
+currentState = reducer(currentState, { type: "ADD", payload: 4352345234532});
+console.log(currentState);
+
 currentState = reducer(currentState, { type: "ADD_TO_MEMORY"});
 console.log(currentState);
 
