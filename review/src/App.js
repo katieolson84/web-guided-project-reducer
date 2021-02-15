@@ -8,6 +8,7 @@ let currentState = {
 };
 
 console.log(currentState);
+currentState = reducer()
 
 export default function App() {
   return (
