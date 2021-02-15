@@ -31,7 +31,7 @@ console.log(currentState);
 
 
 
-currentState = reducer(currentState, addAction(5));
+currentState = reducer(currentState, addAction(5) );
 console.log(currentState);
 
 currentState = reducer(currentState, subtractAction(4));
@@ -43,7 +43,10 @@ console.log(currentState);
 currentState = reducer(currentState, addAction(1312312312));
 console.log(currentState);
 
-currentState = reducer(currentState, { type: "ADD_TO_MEMORY"});
+currentState = reducer(currentState, addToMemoryAction());
+console.log(currentState);
+
+currentState = reducer(currentState, clearAction());
 console.log(currentState);
 
 export default function App() {
