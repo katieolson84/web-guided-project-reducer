@@ -3,6 +3,13 @@ import reducer from './reducers/calcReducer';
 import "./styles.css";
 
 
+
+//action creators
+const addAction = () => {
+  return({ type: "ADD", payload: 5});
+}
+
+//application
 let currentState = {
   currentValue: 0,
   memory: 0
@@ -10,7 +17,9 @@ let currentState = {
 
 console.log(currentState);
 
-currentState = reducer(currentState, { type: "ADD", payload: 5});
+
+
+currentState = reducer(currentState, );
 console.log(currentState);
 
 currentState = reducer(currentState, { type: "SUBTRACT", payload: 1});
