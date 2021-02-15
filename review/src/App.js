@@ -37,9 +37,7 @@ export default function App() {
   // const [state, setState ] = useState(initialState);
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  console.log(state.currentValue);
-  console.log(state.memory);
-
+  
   return (
     <div className="App">
       <textarea rows="1" value={state.currentValue} id="total" type="text" name="ans"></textarea>
